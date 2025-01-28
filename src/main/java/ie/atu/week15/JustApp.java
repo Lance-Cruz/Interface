@@ -14,12 +14,14 @@ public class JustApp {
         Pizza tuna = new Pizza("Tuna Pizza", 1.99, "why");
         Pizza peperoni = new Pizza("Peperoni Pizza", 19.99, "peperoni");
         Fries french = new Fries("French Fries", 4.99, "french");
+        Dessert iceCream = new Dessert("Strawberry Ice Cream", 6.99, "Strawberries");
 
         //Add all the orders to a collection
         items.add(cheeseBurger);
         items.add(tuna);
         items.add(peperoni);
         items.add(french);
+        items.add(iceCream);
 
         //Display all the orders
         for (MenuItem item : items){
