@@ -14,7 +14,7 @@ public class JustApp {
         Pizza tuna = new Pizza("Tuna Pizza", 1.99, "why");
         Pizza peperoni = new Pizza("Peperoni Pizza", 19.99, "peperoni");
         Fries french = new Fries("French Fries", 4.99, "french");
-        Dessert iceCream = new Dessert("Strawberry Ice Cream", 6.99, "Strawberries");
+        Dessert iceCream = new Dessert("Strawberry Ice Cream", 7.99, "Strawberries");
 
         //Add all the orders to a collection
         items.add(cheeseBurger);
@@ -32,5 +32,10 @@ public class JustApp {
         }
 
         //Find the total cost of the whole order
+        double totalCost = 0;
+        for (MenuItem item : items) {
+            totalCost += item.getPrice();
+        }
+        System.out.println("Total Cost: $" + totalCost);
     }
 }
